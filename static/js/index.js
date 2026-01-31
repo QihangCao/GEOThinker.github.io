@@ -19,7 +19,16 @@ function setInterpolationImage(i) {
   $('#interpolation-image-wrapper').empty().append(image);
 }
 
-
+window.addEventListener('load', () => {
+  if (typeof bulmaCarousel === 'undefined') return;
+  bulmaCarousel.attach('#viz-carousel', {
+    slidesToScroll: 1,
+    slidesToShow: 1,
+    loop: true,
+    navigation: true,
+    pagination: true
+  });
+});
 $(document).ready(function() {
     // Check for click events on the navbar burger icon
     $(".navbar-burger").click(function() {
