@@ -219,17 +219,33 @@
                style="width: 100%; border-radius: 10px;">
         </figure>
 
-        <!-- 可选：如果你想加一句caption，把下面取消注释即可 -->
-        <!--
         <p class="has-text-centered" style="margin-top: 10px; font-size: 0.95rem;">
-          Overview of GeoThinker: active geometry integration for spatial reasoning.
+          Our framework features a decoupled interaction mechanism where the VGGT is integrated via Spatial-Grounded Fusion layers. By employing Importance Gating, the model predicts a localized attention bias to dynamically modulate the injection of geometric textures. This design ensures that rich structural details are only queried when they are contextually relevant to the semantic reasoning process. 
         </p>
-        -->
       </div>
     </div>
   </div>
 </section>
 
+<section class="section" id="model-overview">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Visualization</h2>
+
+        <figure class="image" style="margin-top: 12px;">
+          <img src="./static/images/mindube_visual_1.png"
+               alt="Visualization"
+               style="width: 100%; border-radius: 10px;">
+        </figure>
+
+        <p class="has-text-centered" style="margin-top: 10px; font-size: 0.95rem;">
+          Heatmaps illustrate that GeoThinker naturally learns to prioritize salient object boundaries and structural edges while suppressing non-informative regions like floors or walls. 
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
